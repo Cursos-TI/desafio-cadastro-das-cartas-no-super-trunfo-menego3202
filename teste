@@ -1,1 +1,77 @@
+#include <stdio.h>
+//projeto escrito pelo aluno Lucas Menegotto
 
+int main() {
+    char estado1;   //adicionar o prefixo do primeiro estado
+    char estado2;   //adicionar o prefixo do segundo estado
+
+    char codigo1[4];    // código da carta 1 (ex: A01)
+    char codigo2[4];    // código da carta 2
+
+    int populacao1;     // população da cidade 1
+    int populacao2;     // população da cidade 2
+
+    float area1;        // área da cidade 1
+    float area2;        // área da cidade 2
+
+    float PIB1;         // PIB da cidade 1
+    float PIB2;         // PIB da cidade 2
+
+    int pontosTuristicos1; // pontos turísticos da cidade 1
+    int pontosTuristicos2; // pontos turísticos da cidade 2
+
+
+    printf("Digite uma letra de A - H para o primeiro Estado: \n");  // Solicita o prefixo do primeiro estado
+    scanf(" %c", &estado1);
+
+    printf("Digite uma letra de A - H para o segundo Estado: \n");   // Solicita o prefixo do segundo estado
+    scanf(" %c", &estado2);
+
+    printf("Digite o código da carta 1 (ex: A01): \n"); // Solicita o código da carta 1
+    scanf("%3s", codigo1);
+
+    printf("Digite o código da carta 2 (ex: A02): \n"); // Solicita o código da carta 2
+    scanf("%3s", codigo2);
+
+    printf("Digite a população da cidade 1: \n");   // Solicita a população da cidade 1
+    scanf("%d", &populacao1);
+
+    printf("Digite a população da cidade 2: \n");   // Solicita a população da cidade 2
+    scanf("%d", &populacao2);
+
+    printf("Digite a área da cidade 1: \n");   // Solicita a área da cidade 1
+    scanf("%f", &area1);    
+
+    printf("Digite a área da cidade 2: \n");    // Solicita a área da cidade 2
+    scanf("%f", &area2);
+
+    printf("Digite o PIB da cidade 1: \n");     // Solicita o PIB da cidade 1
+    scanf("%f", &PIB1);
+
+    printf("Digite o PIB da cidade 2: \n");   // Solicita o PIB da cidade 2
+    scanf("%f", &PIB2); 
+
+    printf("Digite o número de pontos turísticos da cidade 1: \n"); // Solicita o número de pontos turísticos da cidade 1
+    scanf("%d", &pontosTuristicos1);        
+
+    printf("Digite o número de pontos turísticos da cidade 2: \n"); // Solicita o número de pontos turísticos da cidade 2
+    scanf("%d", &pontosTuristicos2);
+
+printf("\nCarta 1:\n");     // Exibe os dados da carta 1
+printf("Estado: %c\n", estado1);        // Exibe o prefixo do primeiro estado
+printf("Código: %s\n", codigo1);        // Exibe o código da carta 1
+printf("População: %d\n", populacao1);      // Exibe a população da cidade 1
+printf("Área: %.2f km²\n", area1);      // Exibe a área da cidade 1
+printf("PIB: %.2f reais\n", PIB1);      // Exibe o PIB da cidade 1
+printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);     // Exibe o número de pontos turísticos da cidade 1
+
+printf("\nCarta 2:\n");     // Exibe os dados da carta 2
+printf("Estado: %c\n", estado2);    // Exibe o prefixo do segundo estado
+printf("Código: %s\n", codigo2);    // Exibe o código da carta 2
+printf("População: %d\n", populacao2);      // Exibe a população da cidade 2
+printf("Área: %.2f km²\n", area2);      // Exibe a área da cidade 2
+printf("PIB: %.2f reais\n", PIB2);      // Exibe o PIB da cidade 2
+printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);     // Exibe o número de pontos turísticos da cidade 2
+
+    return 0;
+}
